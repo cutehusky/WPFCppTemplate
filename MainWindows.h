@@ -5,9 +5,15 @@ ref class MainWindows: public WindowsBase
 {
 private:
 	Button^ button1;
+	ComboBox^ comboBox1;
+	TextBlock^ textBox1;
+	CheckBox^ checkBox1;
 public:
 	MainWindows();
-	void OnButton1Click(Object^ sender, RoutedEventArgs^ e);
+	void OnButtonClick(Object^ sender, RoutedEventArgs^ e);
+	void OnCheckBoxChecked(Object^ sender, RoutedEventArgs^ e);
+	void OnCheckBoxUnChecked(Object^ sender, RoutedEventArgs^ e);
+	void OnComboBoxChange(Object^sender, SelectionChangedEventArgs^ e);
 protected:
 	void InitializeComponent() override;
 };

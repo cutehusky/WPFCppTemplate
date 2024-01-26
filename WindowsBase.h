@@ -10,11 +10,17 @@ ref class WindowsBase
 {
 private:
 	String^ _windowsName;
+	Window^ _wd;
 public:
 	WindowsBase(String^ name);
 	virtual Window^ LoadWindows();
 protected:
-	Window^ _wd;
+	template <class T>
+	T^ GetComponent(String^ name);
 	virtual void InitializeComponent() = 0;
 };
 
+template <class T>
+T^ WindowsBase::GetComponent(String^ name) {
+	return (T^)_wd->FindName(name);
+}
