@@ -12,10 +12,10 @@ int main(array<String^>^ args)
 }
 */
 
-// Without Console
+// Hide Console
 [STAThread]
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hInstPrev, LPSTR lpCmd, int cmdshow)
 {
 	MainWindows^ mainWin = gcnew MainWindows();
-	return (gcnew WinApplication(mainWin))->Run();;
+	return (gcnew WinApplication(mainWin))->Run();
 }

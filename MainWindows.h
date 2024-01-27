@@ -8,6 +8,8 @@ private:
 	ComboBox^ comboBox1;
 	TextBlock^ textBox1;
 	CheckBox^ checkBox1;
+	TreeView^ treeView;
+	ListView^ listView;
 public:
 	MainWindows();
 	void OnButtonClick(Object^ sender, RoutedEventArgs^ e);

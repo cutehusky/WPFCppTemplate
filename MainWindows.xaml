@@ -1,5 +1,6 @@
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av"
         Title="MainWindows" Height="450" Width="800">
     <Grid>
         <Button x:Name="Button1" Content="Hello World ???" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top"/>
@@ -10,5 +11,8 @@
         <CheckBox x:Name="CheckBox1" Content="CheckBox" HorizontalAlignment="Left" Margin="349,141,0,0" VerticalAlignment="Top"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="533,157,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="349,173,0,0" TextWrapping="Wrap" Text="Selected: " VerticalAlignment="Top" Height="16" Width="120"/>
+        <TreeView x:Name="TreeView1" Margin="81,205,604,21"/>
+        <ListView x:Name="ListView1" Margin="210,205,456,21">
+        </ListView>
     </Grid>
 </Window>
